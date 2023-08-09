@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | strings and strings methods </title>
+ 
+</head>
+<body>
+    <div class="conteinar">
+        <h1>
+            this is a heading
+        </h1>
+        <div id="content">
+
+        </div>
+        <div class="contant">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt eos illo voluptas dolorem odio, 
+            atque non itaque aliquid expedita, ipsa voluptatem, repellendus et. Quo labore ea est adipisci.
+             Sit quod vel beatae iste odio necessitatibus autem temporibus enim, laudantium magni sunt ab 
+             explicabo delectus aut libero maxime eum rem. Odit amet eos 
+            ratione mollitia animi accusamus sequi nesciunt 
+            dolorum perferendis hic qui, aliquam odio suscipit sint? Adipisci.
+        </div>
+    </div>
+
+    <script>
+        var string = "this";
+
+     // var string = 'this'; 
+
+        console.log(string);
+
+        var name = " Kishan is a good boy and also ";
+        // console.log(string + name); // according to this we can merge the two differents strigs 
+        var temp = `${name}  a nice person and he has a chennal called ${string} `;
+        console.log(temp);
+
+        // var len = string.length; // through this type we can find the length of the string 
+        // console.log(`Length of name is ${len}`);
+        
+        console.log("Hello world\nkishan"); // for going to the new line 
+
+        var y = new String("thisType") // this is constructor for creating the string 
+        console.log(y);
+
+        document.getElementById('content').innerHTML = '<h3> this is h3 heading </h3>'
+        // this is used to dynamicaly adding h3 heading using id by JavaScript 
+
+    </script>
+</body>
+</html>

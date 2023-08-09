@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript string Functions</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+        var str = "this is a string";
+        console.log(str);
+        var position = str.indexOf('is');
+        console.log(position); // this function will give the first occurence of a substring 
+
+         position = str.lastIndexOf('is');
+        console.log(position); // this function will give the Last occurence of a substring 
+
+        // Substring from the string 
+        // var substr = str.slice(1,7); // this function takes two parameter (1) start position  (2) End position 
+        // console.log(substr);
+
+        var substr = str.substring(1,7);
+        console.log(substr);
+
+        var substr1 = str.substr(0,4); 
+        console.log(substr1);
+
+        var replaced = str.replace('string', 'kishan'); // this function is used to repalce the word frome another string 
+        console.log(replaced);
+
+        console.log(str.toUpperCase()); // for creating the uppercase the given string 
+        console.log(str.toLowerCase()); // for creating the lowercase the given string
+
+        var newString = str.concat('New string'); //this function merge(concat) the strings 
+        console.log(newString);
+
+        var strwithwhitespaces =  "    this containes         whitespaces     ";
+
+        console.log(strwithwhitespaces)
+        console.log(strwithwhitespaces.trim());// this function removes the strarting and ending positions whitespaces..
+              
+        var char2 = str.charAt(2); // this function prints the 2 index character which is 'i'..
+        console.log(char2);
+        
+        var char2 = str.charCodeAt(2); // this function prints the 2 index character code which is 'i' = 105 ..
+        console.log(char2);
+
+        console.log(str[6]);
+
+
+
+    </script>
+</body>
+</html>
