@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuipulating DOM</title>
+</head>
+<body>
+    <!-- the full form of the dom is Document object modal  -->
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>contect us</li>
+            <li>More about us</li>
+            <li>contect us</li>
+        </ul>
+    </div>
+    <div class="containers">
+        another div 
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+        let nav = document.getElementById('nav');
+        console.log(nav);
+        let containers = document.getElementsByClassName('containers');
+        console.log(containers);
+
+
+        let set =  document.querySelector('.container'); // for select the css containers...
+        console.log("selector return ", set);
+
+        let sel =  document.querySelectorAll('#nav>li'); 
+        console.log("selector return ", set);
+    </script>
+</body>
+</html>

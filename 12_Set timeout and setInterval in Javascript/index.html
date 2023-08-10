@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+          Time now is <span id="time">
+
+          </span>
+    </div>
+    <script>
+        console.log("this is the tutorial about SetTimeout and ClesrTimeout");
+        // whats happens sometimes? when we run to function , we directly run function but sometims we want that function 
+        // after some times or else after an interval it keeps on running repeatedly and if we want to like this you 
+        // can use set timeout and set interval.
+     // SetTimeout --> Allows us to run the function once after the interval of time
+     // ClearTimeout --> Allows us to run the function repeatedly after the interval of time  
+        
+        function greet(name, bye) {
+            console.log("Hello Good morning " + name  + " " + bye);
+        }
+    //    Timeout = setTimeout(greet, 5000 , "kishan" , "Takecare"); // 5000 mili seconds
+    //    console.log(Timeout);
+
+    //    clearTimeout(Timeout);
+
+    //  IntervleId = setInterval(greet , 1000 , "kishan" , "Good Night"); // with the help of setInterval we can print the functions value again and again.
+    //  clearInterval(IntervleId);
+
+    function displayTime(){
+        time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML = time;
+    }
+    setInterval(displayTime , 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+    <style>
+        #btn{
+            padding: 10px 14px;
+            color: indianred;
+            border: 2px solid black;
+            background-color: blueviolet;
+            font-weight: bolt;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        p::selection{
+            background-color: black;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- Browser events:
+    Click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    sumbit
+    focus
+    DOMcontentLoaded
+
+    Transitionend
+     -->
+
+     <div class="con">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Molestias consectetur totam iure officia vel officiis perferendis 
+             quod dolorum molestiae pariatur aliquid repudiandae distinctio blanditiis, 
+             soluta voluptatum voluptate explicabo maiores at illo, nostrum voluptatibus, 
+             sed delectus fuga? Corporis, dolorum commodi. Ex nemo odit fugit tempora provident impedit, optio aliquam beatae.
+              Eos ducimus voluptatem quaerat, quo animi magnam rem ullam deleniti commodi repellendus asperiores
+               excepturi quia eligendi voluptas cum aut odit qui illo delectus temporibus quis impedit! Minima laborum
+                recusandae distinctio quae blanditiis. Earum, quod! Minima necessitatibus iure veniam inventore autem 
+                deleniti. Neque molestiae eius ducimus voluptate, itaque culpa, temporibus quas praesentium in, alias
+                 consectetur. Maxime, perspiciatis explicabo. Inventore odio similique natus magnam, culpa corporis error 
+                 cupiditate doloremque a unde. Reiciendis sequi veniam consectetur necessitatibus vel itaque sint enim
+                  dignissimos, est quibusdam quos eos animi. Tempora exercitationem repellat itaque obcaecati molestiae
+                   dolorum dicta provident necessitatibus debitis cumque ipsam corrupti dolores aut, ducimus alias, saepe,
+                    recusandae laboriosam! Dignissimos soluta ipsum ex dolores animi fugit expedita cumque quidem explicabo 
+                    totam unde numquam at facilis minima, corrupti itaque voluptate labore optio laborum! Ullam, et inventore eligendi necessitatibus assumenda dignissimos nobis ducimus saepe. Cum, assumenda rem facere provident possimus exercitationem iure rerum eaque earum fugiat, inventore qui! Necessitatibus, rem et? Magni, optio officia odio ipsa unde error reiciendis quas exercitationem beatae non in rem aliquid doloribus similique? Dolorum eligendi animi obcaecati saepe est magni voluptatem modi dicta ex tempora.</p>
+     </div>
+     <button id="btn"  onclick="toggalhide()">show/Hide</button>
+
+     <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseout', function run(params) {
+            // alert('mouse inside');
+            console.log('mouse inside')
+        });
+
+        para.addEventListener('mouseout', function run(params) {
+            // alert('mouse now went outside');
+            console.log('mouse now went outside');
+        });
+
+
+        function toggalhide() {
+        //  let btn = document.getElementById('btn');
+        //  let para = document.getElementById('para');
+         if (para.style.display != 'none') {
+            para.style.display = 'none';  // for hideing the paragraph
+         }
+         else{
+            para.style.display = 'block'; // for unhideing the paragraph
+         }
+        }
+     </script>
+</body>
+</html>
