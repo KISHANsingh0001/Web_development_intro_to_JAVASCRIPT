@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <div class="container">
+        This is a Arrow functions tutorial 
+    </div>
+    <script>
+        // function greet(){    // this is the standerd way to create the functions 
+        //     console.log('good morning');
+        // }
+        // greet();
+
+    //    ShotCut way to crate the function  name is (Arrow Function);
+    //    let = greet = () =>{
+    //         console.log('Good night');
+    //     }
+          
+           let obj1={
+            greetings: "Good morning",
+            names: ["Harry" , "skillf" , "Djkhiladi" , "Rhohan"],
+            speak(){
+                
+            this.names.forEach((student)=>{ // in the greetings function's 'this' will point the outside objects but the normal 
+             console.log(this.greetings + " Hellow world " + student); // function it will not point the outside object it will retuen undifined ( called lexical this)
+                  });
+            }
+           }
+          obj1.speak();
+
+        let = greet = () => console.log('Good night');
+        
+         greet();
+
+         setTimeout(() => {
+            console.log('We are inside the set time out ');
+         }, 3000);
+
+
+        //  let sum = (a , b) =>{  // this is also a Arrow Function 
+        //     return a + b;
+        //  }
+        let sum = (a , b) => a + b;  // this is also a Arrow Function 
+          
+        let half =  a => a/2;   // this is also a Arrow Function (this is short cut method)
+         
+         console.log(sum(45 , 45));
+    </script>
+</body>
+</html>

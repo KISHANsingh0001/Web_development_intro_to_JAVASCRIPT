@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVAscrip dates</title>
+    <style>
+        .container{
+            font-size: 23px;
+            background-color: antiquewhite;
+            border: 2px solid;
+            border-radius: 10px;
+            padding: 34px;
+            margin: 4px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        This is a container </br>
+        Current time is <span id="time">
+
+        </span>
+    </div>   
+    <script>
+        console.log("This is date and time tutorial ")
+
+        let dt = new Date();  // now is a constructor and Date is the object here
+        console.log(dt);   
+        
+        let newDate = new Date("2029-09-30");
+        console.log(newDate);
+
+        //let newDt = new Date(year , month , data , houres , minutes , seconds , miliseconds);
+        let newDt = new Date(3030 , 5 , 3  , 9 , 3 , 2 , 34);
+        console.log(newDt);
+
+        let year = newDate.getFullYear();   // For get the year
+        console.log(" The year is "+year);
+        
+        let dat = newDate.getDate();
+        console.log(" The Date is "+ dat);  // For get the Date
+        
+        let mon = newDate.getMonth();       // For get the month
+        console.log(" The month is "+ mon);
+        
+        let hor = newDate.getHours();       // For get the hours
+        console.log(" The hours is "+ hor);
+
+        let day = newDate.getDay();        // For get the Day
+        console.log(" The Day is "+ day);
+ 
+       let miniuts = newDate.getMinutes();  // for get the Minutes
+         console.log(" The miniuts is "+ miniuts);
+
+        newDate.setDate(15)    // For the set the data 
+        console.log(newDate);
+         
+        newDate.setMinutes(29); // For set the minutes
+        console.log(newDate);
+         
+        setInterval(UpdateTime , 1000);
+
+        function UpdateTime(params) {
+            time.innerHTML = new Date();
+        }
+    </script>
+</body>
+</html>
