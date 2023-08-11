@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is math object tutorial </h1>
+    </div>
+
+    <script>
+        // Printingt the math Objects 
+        let m = Math;
+        console.log(m);
+        // printing the constants from Math Object
+        console.log("the value of Math.E is " , Math.E); // here E =  Euler's number
+        console.log("the value of Math.PI is " , Math.PI);
+        console.log("the value of Math.LN2 is " , Math.LN2);
+        console.log("the value of Math.SQRT1_2 is " , Math.SQRT1_2);
+        console.log("the value of Math.LOG2E is " , Math.LOG2E);
+        console.log("the value of Math.LN2 is " , Math.LN2);
+    
+        // printing the Functions from Math Object
+        // Functions 
+     
+        let a = 34.64534;
+        let b = 89;
+
+         console.log("The value of a and b is " , a,b);
+        console.log("The value of a and b is " , Math.round(a) , Math.round(b)); // Returns a supplied numeric expression rounded to the nearest integer.
+        
+        console.log(" 3 to the power 2 is " , Math.pow(3,2));  // Returns the value of a base expression taken to a specified power.
+
+        console.log(" The squre root of 36 is " , Math.sqrt(36));
+        console.log(" The squre root of 64 is " , Math.sqrt(64));
+        console.log(" The squre root of 50 is " , Math.sqrt(50));
+
+        //ceil or floor
+        console.log(" 5.8 rounded up to nearrest integer is " , Math.ceil(5.8));// Returns the smallest integer greater than or equal to its numeric argument.
+        console.log(" 5.8 rounded down to nearrest integer is " , Math.floor(5.8)); // Returns the greatest integer less than or equal to its numeric argument.
+ 
+        // Absalute funtion
+        console.log("Absolute valur of  -5.66 is " , Math.abs(-5.66));
+
+        // Tegnometric functions 
+        console.log("the valur of sin(pi) is " , Math.sin(Math.PI/2))
+
+        // min and max function 
+        console.log("minimum value of 4, 5 , 6  is " , Math.min(4 ,5 ,6));
+        console.log("maximum value of 4, 5 , 6  is " , Math.max(4 ,5 ,6));
+
+        // Genrating the random number 
+        let r = Math.random();
+        // Random number b/w (a,b) = a + (b-a)*Math.random()
+        let num1 = 1;
+        let num2 = 100;
+        let ans = a + (b-a)*Math.random(); // Genrate the random number between 1 to 100.
+        console.log(Math.round(ans));
+        console.log(" The random number is ", Math.round(r));
+
+    </script>
+</body>
+
+</html>

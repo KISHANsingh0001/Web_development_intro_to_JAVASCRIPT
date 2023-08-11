@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Json( JavaScript Object Notation ) in JavaScript</title>
+</head>
+<body>
+    <!--  Jason is a data formate it's simply a notation using which you can transport data  -->
+<div class="container">
+    <h1>This is my container</h1>
+</div>
+
+    <script>
+     let jsonObj = {
+        name: "kishan",
+        channel: "CodewithKishan",
+        friend: "Rohan das",
+        food: "bhindi"
+     }
+        console.log(jsonObj);
+        let myjsonStr = JSON.stringify(jsonObj); // converting the json into string
+        console.log(myjsonStr);
+
+       myjsonStr = myjsonStr.replace('kishan' , 'harry'); // for the repalcing the string
+        console.log(myjsonStr);
+
+        newjsonObj = JSON.parse(myjsonStr);// converting the string into Json.
+        console.log(newjsonObj);
+    </script>
+</body>
+</html>
